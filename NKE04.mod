@@ -28,7 +28,6 @@ q           =1/(lambda^2+alpha*(1-beta*rho));
 model(linear);
 ygap    =ygap(+1)-Psi*(inom-pic(+1))+g;
 pic     =beta*pic(+1)+lambda*ygap+u;
-%inom   =gamma_pic*pic(+1)+1/Psi*g;
 g       =mu*g(-1)+ghat;
 u       =rho*u(-1)+uhat;
 end;
