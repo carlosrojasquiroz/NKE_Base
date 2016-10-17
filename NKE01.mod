@@ -6,7 +6,7 @@
 // Codigo que describe un modelo NKE basico loglinealizado. 
 // El Estado Estacionario es cero debido a la loglinealización manual.
 // Modelo presentado en Clarida, Galí y Gertler (1999).
-// Política monetaria discrecional óptima.
+// Política monetaria óptima bajo discreción.
 // (c) Carlos Rojas Quiroz 
 
 
