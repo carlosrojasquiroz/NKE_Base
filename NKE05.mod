@@ -6,7 +6,7 @@
 // Codigo que describe un modelo NKE basico loglinealizado. 
 // El Estado Estacionario es cero debido a la loglinealización manual.
 // Modelo presentado en Clarida, Galí y Gertler (1999).
-// Política monetaria óptima con discreción, comando discretionary_policy.
+// Política monetaria óptima bajo discreción, comando discretionary_policy.
 // Se obtiene frontera de política.
 // (c) Carlos Rojas Quiroz 
 
@@ -29,7 +29,6 @@ q           =1/(lambda^2+alpha*(1-beta*rho));
 model(linear);
 ygap    =ygap(+1)-Psi*(inom-pic(+1))+g;
 pic     =beta*pic(+1)+lambda*ygap+u;
-%inom   =gamma_pic*pic(+1)+1/Psi*g;
 g       =mu*g(-1)+ghat;
 u       =rho*u(-1)+uhat;
 end;
