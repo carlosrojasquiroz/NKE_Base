@@ -52,3 +52,4 @@ var_ygap(j,1)    =oo_.var(1,1);
 var_pic(j,1)     =oo_.var(3,3);
 end;
 varianzas        =[var_pic*10000 var_ygap*10000];
+scatter(varianzas(:,1), varianzas(:,2))
