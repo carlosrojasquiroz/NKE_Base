@@ -18,7 +18,6 @@ eta     =1;
 theta   =1;
 phi     =0.75;
 epsilon =10;
-G_Y     =0.15;
 rho_z   =0.75;
 rho_pm  =0.50;
 rho_i   =0.70;
