@@ -5,7 +5,7 @@
 
 // Codigo que describe un modelo NKE basico loglinealizado. 
 
-var c inom pic lab w y yF mc m X pm z;
+var c inom pic lab w y mc m pm z;
 varexo e_pm e_z;
 
 parameters beta sigma eta phi rho_i phi_pic phi_y rho_pm rho_z;
@@ -29,8 +29,6 @@ mc  = w - z;
 inom= rho_i*inom(-1)+(1-rho_i)*(phi_pic*pic + phi_y*y) + pm;
 m   =sigma*c-beta*inom;
 y   = c;
-yF  = (1+eta)/(sigma+eta)*z;
-X   = y-yF;
 z   = rho_z*z(-1) + e_z;
 pm  = rho_pm*pm(-1) + e_pm;
 end;
@@ -45,7 +43,6 @@ y       = 0;
 pm      = 0;
 mc      = 0;
 m       = 0;
-X       = 0;
 z       = 0;
 end;
 
